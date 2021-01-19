@@ -51,6 +51,7 @@ class Distribute_ACF_Images {
 		switch_to_blog( $destination_blog_id );
 		$post                = get_post( $new_post_id );
 		$fields              = get_fields( $post->ID );
+		$media_acf 	     = [];
 
 		if ( $fields ) {
 
